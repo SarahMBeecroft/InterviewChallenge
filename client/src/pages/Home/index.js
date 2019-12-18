@@ -76,7 +76,7 @@ class Home extends Component {
             <Results>
               <div className="colorResults"></div>
               <br></br>
-              <button type="button" class="btn btn-dark">
+              <button type="button" class="btn btn-dark clearButton">
                 Clear
               </button>
             </Results>

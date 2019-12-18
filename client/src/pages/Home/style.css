@@ -29,7 +29,7 @@
 
 /* Color buttons */
 .colorButtons {
-  margin-left: 200px;
+  margin-left: 300px;
 }
 
 /* Color results */
@@ -38,7 +38,13 @@
   border-radius: 1%;
   width: 600px;
   height: 500px;
-  margin-right: 200px;
+  margin-right: 300px;
+}
+
+/* Moves clear button to bottom right of results */
+.clearButton {
+  float: right;
+  margin-right: 300px;
 }
 
 
