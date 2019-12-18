@@ -1,6 +1,7 @@
 * {
   font-family: 'Source Serif Pro', serif!important;
   font-size: 25px;
+  color: #363C3C;
 }
 
 /* Removes padding to overwrite jumbotron defaults */
@@ -24,6 +25,20 @@
 /* Adds margin to top and bottom of content */
 .appContent {
   margin: 60px 0px 60px 0px;
+}
+
+/* Color buttons */
+.colorButtons {
+  margin-left: 200px;
+}
+
+/* Color results */
+.colorResults {
+  border: 1px solid #363C3C;
+  border-radius: 1%;
+  width: 600px;
+  height: 500px;
+  margin-right: 200px;
 }
 
 
