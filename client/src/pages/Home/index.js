@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Jumbotron from '../../components/Jumbotron';
+import Navbar from '../../components/Navbar';
 import { Container } from '../../components/Grid';
 import './style.css';
 import Footer from '../../components/Footer';
@@ -13,16 +13,16 @@ class Home extends Component {
     return (
       <Container fluid>
 
-        <div className="row">
-          <div className="col s12" id='paddingRemover'>
-            <Jumbotron>
-              <h1 className="appTitle">Placeholder text</h1>
-            </Jumbotron>
+        <div className='row'>
+          <div className='col s12' id='paddingRemover'>
+
+          <Navbar></Navbar>
+    
           </div>
         </div>
 
-        <div className="row">
-          <div className="col s12" id='paddingRemover'>
+        <div className='row'>
+          <div className='col s12' id='paddingRemover'>
             <Footer></Footer>
           </div>
         </div>

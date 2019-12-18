@@ -3,19 +3,9 @@
   font-size: 25px;
 }
 
-/* Jumbotron styling */
-.jumbotron {
-  border-radius: 0 !important;
-  text-align: center!important;
-}
-
 /* Removes padding to overwrite jumbotron defaults */
 #paddingRemover {
   padding-left: 0;
   padding-right: 0;
-}
-
-h1 {
-  display: inline-block;
 }
 
