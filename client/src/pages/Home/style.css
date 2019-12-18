@@ -9,3 +9,12 @@
   padding-right: 0;
 }
 
+/* Search button styling */
+.btn {
+  font-size: 18px;
+}
+
+.form-control {
+  font-size: 18px;
+}
+
