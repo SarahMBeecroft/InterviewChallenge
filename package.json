@@ -2,9 +2,9 @@
   "name": "helpfulhuman",
   "version": "0.1.0",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || node server.js",
+    "start": "if-env NODE_ENV=production && npm run start:prod",
     "start:prod": "node server.js",
-    "start:dev": "npm run start:dev",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
