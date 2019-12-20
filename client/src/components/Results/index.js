@@ -1,11 +1,12 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
+import ColorCard from '../../components/ColorCard';
 
 
 function Results({ children }) {
   return (
-    <div>
-      { children }
+    <div className='colorResults'>
+      <ColorCard style={{ width: "100vw" }}/>
     </div>
   );
 }
