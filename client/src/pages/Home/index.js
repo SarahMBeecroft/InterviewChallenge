@@ -4,8 +4,53 @@ import Navbar from "../../components/Navbar";
 import ColorButtons from "../../components/ColorButtons";
 import Results from "../../components/Results";
 import "./style.css";
+import colorList from "../../colorList";
 
 class Home extends Component {
+  state = {
+    search: "",
+    colors: [],
+  };
+
+  // Takes value from search input
+  handleInputChange = event => {
+    this.setState({ search: `q=${event.target.value}` });
+  };
+
+  // Function to handle form submit
+  handleFormSubmit = event => {
+    // Prevents page from reloading
+    event.preventDefault();
+    // Connects to colorList.js file with color array
+      colorList(this.state.search)
+      .then(res => {
+        if (res.data.data === "error") {
+          throw new Error(res.data.data);
+        } else {
+          // Stores responses in array
+          let results = res.data.data;
+          console.log(results);
+          // Maps through the array
+          results = results.map(result => {
+         
+
+            result = {
+            
+              color: result.color,
+              hex: result.hex             
+           
+            };
+            console.log(result);
+
+            return result;
+          });
+          // Sets empty color array to new array of objects
+          this.setState({ colors: results, error: "" });
+        }
+      })
+      .catch(err => this.setState({ error: err.items }));
+  };
+
   // Renders content onto main home page
   render() {
     return (
@@ -74,7 +119,11 @@ class Home extends Component {
 
           <div className="col s8">
             <Results>
-              <div className="colorResults"></div>
+            handleFormSubmit={this.handleFormSubmit}
+            handleInputChange={this.handleInputChange}
+              <div className="colorResults">
+                colors={this.state.colors}
+              </div>
               <br></br>
               <button type="button" class="btn btn-dark clearButton">
                 Clear
