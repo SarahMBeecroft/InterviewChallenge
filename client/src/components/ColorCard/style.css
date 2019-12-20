@@ -1,0 +1,4 @@
+.colorCard {
+  width: calc(100vw / 4);
+  height: 150px;
+}
