@@ -15,7 +15,7 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
-  "homepage": "https://fathomless-beyond-22490.herokuapp.com/",
+  "homepage": "https://stark-garden-97167.herokuapp.com/",
   "dependencies": {
     "express": "^4.17.1",
     "react": "^16.12.0",

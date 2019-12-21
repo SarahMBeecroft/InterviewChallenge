@@ -6,7 +6,7 @@
     "npm": "6.10.2",
     "node": "11.6.0"
   },
-  "homepage": "https://fathomless-beyond-22490.herokuapp.com/",
+  "homepage": "https://stark-garden-97167.herokuapp.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
